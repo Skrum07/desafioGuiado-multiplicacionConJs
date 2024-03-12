@@ -15,3 +15,22 @@ const tablaMulti = (x) => {
     }
 }
 
+const factoriales = (x) => {
+    for(let i = 1; i <= x ; i++) {
+        let resultado = 1;
+        for(let j = 1; j <= i; j++){
+            resultado * j;
+        }
+        console.log(`El factiroal de ${i} es ${resultado}.`);
+    }
+}
+let validacion = validador(multiplo);
+
+if(validacion){
+    tablaMulti(multiplo);
+    factoriales(multiplo);
+}
+
+validador(multiplo);
+tablaMulti(multiplo);
+factoriales(multiplo);
